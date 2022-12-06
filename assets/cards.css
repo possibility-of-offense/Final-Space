@@ -1,0 +1,74 @@
+.cards {
+  display: grid;
+  grid-gap: 1rem;
+  margin-top: 2rem !important;
+}
+
+@media (orientation: landscape) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.cards .card {
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+.cards .card:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cards .card figure {
+  margin: 0;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.cards .card figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards .card header h2 {
+  margin: 10px 0;
+}
+
+.cards .card .card-body {
+  padding: 0 10px;
+}
+
+.cards .card .card-body * {
+  margin-top: 0;
+}
+
+.cards .card .card-body a {
+  background-color: var(--main-bg);
+  text-decoration: none;
+  color: #f4f4f4;
+  padding: 5px 15px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 17px;
+  border-radius: 4px;
+  transition: all 0.25s ease-out;
+}
+
+.cards .card .card-body a:hover,
+.cards .card .card-body a:active,
+.cards .card .card-body a:focus {
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 55%);
+}

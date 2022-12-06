@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ddd;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
