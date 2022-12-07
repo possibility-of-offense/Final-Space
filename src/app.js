@@ -7,3 +7,5 @@ import { getCharacters } from './api/dataService.js';
 (async () => console.log(await getCharacters()))();
 
 // test
+
+// new branch
