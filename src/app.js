@@ -1,6 +1,6 @@
 import { getCharacters } from './api/dataService.js';
 
-console.log("script file is loaded")
+// console.log("script file is loaded")
 
 // *** request test ***
 // check the browser's console
