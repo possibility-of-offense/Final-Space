@@ -1,9 +1,18 @@
 import { get } from "./api.js";
 
 const endpoints = {
-  "characters": "/character"
-}
+  characters: "/character",
+};
 
 export const getCharacters = async () => {
-  return await get(endpoints.characters)
-}
+  const data = await get(endpoints.characters);
+
+  const normalizedData = data.reduce((acc, cur) => {
+    const id = cur.id;
+
+    acc[id] = cur;
+    return acc;
+  }, {});
+
+  return normalizedData;
+};
