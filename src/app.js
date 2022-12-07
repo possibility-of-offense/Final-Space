@@ -5,3 +5,5 @@ import { getCharacters } from './api/dataService.js';
 // *** request test ***
 // check the browser's console
 (async () => console.log(await getCharacters()))();
+
+// test
