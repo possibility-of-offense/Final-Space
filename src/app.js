@@ -5,7 +5,7 @@ import { getCharacters } from "./api/dataService.js";
 // *** request test ***
 // check the browser's console
 // Some IFFE functions
-(async () => console.log(await getCharacters()))();
+( async () => console.log(await getCharacters()))();
 
 // test
 
