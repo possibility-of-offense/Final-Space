@@ -14,6 +14,6 @@ export const get = async endpoint => {
     const res = await fetch(HOST + endpoint);
     return normalizeData(await res.json());
   } catch (error) {
-    alert(error.message);
+    throw new Error(error);
   }
 };
