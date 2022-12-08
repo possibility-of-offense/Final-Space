@@ -5,6 +5,7 @@
   margin-top: 2rem;
   display: grid;
   grid-gap: 1.5rem;
+  align-items: start;
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
