@@ -3,6 +3,7 @@
 @import "cards.css";
 @import "utilities.css";
 @import "generic.css";
+@import "details.css";
 
 * {
   box-sizing: inherit;
