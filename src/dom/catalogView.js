@@ -7,13 +7,12 @@ const catalogTemplate = chars => html`
     <h1 class="text-center">CATALOG VIEW</h1>
     <div class="cards container-wide">
       <!-- component goes here -->
-      ${chars.map(mainComponent)}
+      ${Object.values(chars).map(mainComponent)}
     </div>
   </section>
 `;
 
 export const catalogView = async (ctx) => {
   const chars = await getLimitChars(3)
-  console.log(chars)
   ctx.renderContent(catalogTemplate(chars))
 }
