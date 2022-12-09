@@ -1,4 +1,3 @@
-import { accordion } from './dom/accordion.js';
 import page from '../node_modules/page/page.mjs';
 import { navigationTemplate } from './dom/navigationView.js';
 import { addNav } from './middlewares/nav.js';
