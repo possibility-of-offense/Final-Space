@@ -1,95 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/styles.css" />
-    <script src="./src/app.js" type="module"></script>
-  </head>
-  <body>
-    <nav id="main-nav">
-      <ul>
-        <li><a aria-label="Home" href="/">Home</a></li>
-        <li><a aria-label="Catalog" href="/catalog">Catalog</a></li>
-      </ul>
-    </nav>
 
-    <main>
-      <h1 class="text-center">CATALOG VIEW</h1>
-      <div class="cards container-wide">
-        <div class="card box-shadow-1">
-          <figure>
-            <img
-              class="card-image"
-              src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="Volcano"
-              title="Volcano"
-            />
-          </figure>
-          <section class="card-info">
-            <header>
-              <h2>Title</h2>
-            </header>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                aliquid sint voluptate ex eveniet hic aspernatur? Soluta quos
-                placeat veniam?
-              </p>
-              <a class="box-shadow-2" href="/details/some-card">Go to</a>
-            </div>
-          </section>
-        </div>
-        <div class="card box-shadow-1">
-          <figure>
-            <img
-              class="card-image"
-              src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="Volcano"
-              title="Volcano"
-            />
-          </figure>
-          <section class="card-info">
-            <header>
-              <h2>Title</h2>
-            </header>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                aliquid sint voluptate ex eveniet hic aspernatur? Soluta quos
-                placeat veniam?
-              </p>
-              <a class="box-shadow-2" href="/details/some-card">Go to</a>
-            </div>
-          </section>
-        </div>
-        <div class="card box-shadow-1">
-          <figure>
-            <img
-              class="card-image"
-              src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="Volcano"
-              title="Volcano"
-            />
-          </figure>
-          <section class="card-info">
-            <header>
-              <h2>Title</h2>
-            </header>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                aliquid sint voluptate ex eveniet hic aspernatur? Soluta quos
-                placeat veniam?
-              </p>
-              <a class="box-shadow-2" href="/details/some-card">Go to</a>
-            </div>
-          </section>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <script src="./src/app.js" type="module"></script>
+</head>
 
+<body>
+  <nav id="main-nav">
+    <!-- nav was here  -->
+  </nav>
+
+  <main>
+    <!-- catalog section was here -->
+    <section id="details-section">
       <h1 class="text-center">SINGLE DETAILS VIEW</h1>
       <div class="single-details-view container-wide box-shadow-1">
         <div class="single-details-view__image">
@@ -97,20 +25,13 @@
           <a href="javascript:void(0)">
             <img
               src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="image"
-              title="image"
-              class="box-shadow-2"
-          /></a>
+              alt="image" title="image" class="box-shadow-2" /></a>
         </div>
         <div class="single-details-view__info">
           <div>
             <div>
               <h2>Airline Name</h2>
-              <img
-                src="./assets/imgs/914e5330ca464758a4db7479c59a4c7d.png"
-                alt="logo"
-                title="logo"
-              />
+              <img src="./assets/imgs/914e5330ca464758a4db7479c59a4c7d.png" alt="logo" title="logo" />
             </div>
             <p>Country Name</p>
           </div>
@@ -121,22 +42,22 @@
               sapiente ducimus eligendi, corrupti fugiat saepe voluptates vel
               pariatur aut perspiciatis. Facilis, quia ut! Lorem ipsum dolor
               sit, amet consectetur adipisicing elit.
-              <p class="single-details-view__info--show-more-info"> Incidunt nemo sit vitae,
-                vero illum odio necessitatibus sapiente ducimus eligendi, corrupti
-                fugiat saepe voluptates vel pariatur aut perspiciatis. Facilis,
-                quia ut!</p>
-                <span class="single-details-view__info--show-more-btn">Show more</span>
+            <p class="single-details-view__info--show-more-info"> Incidunt nemo sit vitae,
+              vero illum odio necessitatibus sapiente ducimus eligendi, corrupti
+              fugiat saepe voluptates vel pariatur aut perspiciatis. Facilis,
+              quia ut!</p>
+            <span class="single-details-view__info--show-more-btn">Show more</span>
             </p>
           </div>
           <hr />
           <div>
-            <a href="https://www.google.com" target="_blank"
-              >Website - www.test.com</a
-            >
+            <a href="https://www.google.com" target="_blank">Website - www.test.com</a>
             <p>Established - 1999 &copy;</p>
           </div>
         </div>
       </div>
-    </main>
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>
