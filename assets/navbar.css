@@ -8,8 +8,13 @@
 
 #main-nav ul {
   display: flex;
+  justify-content: space-between;
   padding: 0;
   list-style: none outside;
+}
+
+.right-nav, .left-nav {
+  display: flex;
 }
 
 #main-nav ul li {
