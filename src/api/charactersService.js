@@ -1,3 +1,4 @@
+// *** check the episodes schema here: https://finalspaceapi.com/docs/endpoints/character ***
 import { get } from './api.js';
 
 const endpoints = {
