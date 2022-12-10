@@ -1,9 +1,9 @@
 import page from '../node_modules/page/page.mjs';
-import { navigationTemplate } from './dom/navigationView.js';
+import { navigationTemplate } from './views/navigationView.js';
 import { addNav } from './middlewares/nav.js';
 import { addRender } from './middlewares/render.js';
-import { catalogView } from './dom/catalogView.js';
-import { detailsView } from './dom/detailsView.js';
+import { catalogView } from './views/catalogView.js';
+import { detailsView } from './views/detailsView.js';
 
 // accordion();
 const roots = {

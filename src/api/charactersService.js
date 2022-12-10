@@ -4,7 +4,7 @@ import { get } from './api.js';
 const endpoints = {
   characters: '/character',
   limited: limit => `/character/?limit=${limit}`,
-  single: id => `character/${id}`,
+  single: id => `/character/${id}`,
 };
 
 export const getCharacters = async () => {

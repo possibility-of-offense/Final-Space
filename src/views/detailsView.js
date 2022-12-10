@@ -45,6 +45,5 @@ const detailsTemplate = card => html`
 
 export const detailsView = async ctx => {
   const char = await getSingleChar(ctx.params.id)
-  console.log(char)
   ctx.renderContent(detailsTemplate(char))
 };
