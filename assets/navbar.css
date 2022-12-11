@@ -13,7 +13,8 @@
   list-style: none outside;
 }
 
-.right-nav, .left-nav {
+.right-nav,
+.left-nav {
   display: flex;
 }
 
@@ -40,7 +41,7 @@
   opacity: 0;
   transform: scaleX(0);
   transform-origin: top left;
-  transition: all 0.3s ease-out;
+  transition: all 0.1s ease-out;
   z-index: -1;
 }
 

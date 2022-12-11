@@ -1,12 +1,9 @@
 export function accordion() {
-  const showMoreBtn = document.querySelector(
-    ".single-details-view__info--show-more-btn"
-  );
   const showMoreInfo = document.querySelector(
     ".single-details-view__info--show-more-info"
   );
 
-  showMoreBtn.addEventListener("click", function (e) {
+  return function togglingAccordion(e) {
     const { target } = e;
 
     const content = target.textContent;
@@ -18,5 +15,5 @@ export function accordion() {
       showMoreInfo.style.height = `0px`;
     }
     showMoreInfo.classList.toggle("active");
-  });
+  };
 }

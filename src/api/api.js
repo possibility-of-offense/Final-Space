@@ -1,7 +1,6 @@
-const HOST = 'https://finalspaceapi.com/api/v0/';
+const HOST = "https://finalspaceapi.com/api/v0/";
 
-const normalizeData = data => {
-  console.log(data);
+const normalizeData = (data) => {
   if (data.length > 1) {
     return data.reduce((acc, cur) => {
       const id = cur.id;
@@ -13,7 +12,7 @@ const normalizeData = data => {
   return data;
 };
 
-export const get = async endpoint => {
+export const get = async (endpoint) => {
   try {
     const res = await fetch(HOST + endpoint);
     return normalizeData(await res.json());

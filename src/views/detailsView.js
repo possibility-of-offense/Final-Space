@@ -1,7 +1,9 @@
-import { html } from '../../node_modules/lit-html/lit-html.js';
-import { getSingleChar } from '../api/charactersService.js';
+import { html } from "../../node_modules/lit-html/lit-html.js";
+import { getSingleChar } from "../api/charactersService.js";
+import { accordion } from "../dom/accordion.js";
 
-const detailsTemplate = card => html`
+const detailsTemplate = (card) => {
+  return html`
 <section id="details-section">
       <h1 class="text-center">SINGLE DETAILS VIEW</h1>
       <div class="single-details-view container-wide box-shadow-1">
@@ -30,7 +32,10 @@ const detailsTemplate = card => html`
               vero illum odio necessitatibus sapiente ducimus eligendi, corrupti
               fugiat saepe voluptates vel pariatur aut perspiciatis. Facilis,
               quia ut!</p>
-            <span class="single-details-view__info--show-more-btn">Show more</span>
+            <span @click=${(e) =>
+              accordion()(
+                e
+              )} class="single-details-view__info--show-more-btn">Show more</span>
             </p>
           </div>
           <hr />
@@ -42,9 +47,10 @@ const detailsTemplate = card => html`
       </div>
     </section>
 `;
+};
 
-export const detailsView = async ctx => {
-  const char = await getSingleChar(ctx.params.id)
-  console.log(char)
-  ctx.renderContent(detailsTemplate(char))
+export const detailsView = async (ctx) => {
+  const char = await getSingleChar(ctx.params.id);
+
+  ctx.renderContent(detailsTemplate(char));
 };
