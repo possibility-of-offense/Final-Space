@@ -5,6 +5,7 @@
 @import "generic.css";
 @import "details.css";
 @import "home.css";
+@import "episodes.css";
 
 * {
   box-sizing: inherit;

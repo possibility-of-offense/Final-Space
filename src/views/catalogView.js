@@ -4,7 +4,7 @@ import { mainComponent } from '../components/mainComponent.js';
 
 const catalogTemplate = chars => html`
   <section id="catalog-section">
-    <h1 class="text-center">CATALOG VIEW</h1>
+    <!-- <h1 class="text-center">CATALOG VIEW</h1> -->
     <div class="cards container-wide">
       <!-- component goes here -->
       ${Object.values(chars).map(mainComponent)}

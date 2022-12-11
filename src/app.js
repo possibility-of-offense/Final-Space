@@ -4,6 +4,7 @@ import { addNav } from './middlewares/nav.js';
 import { addRender } from './middlewares/render.js';
 import { catalogView } from './views/catalogView.js';
 import { detailsView } from './views/detailsView.js';
+import { episodesView } from './views/episodesView.js';
 
 // accordion();
 const roots = {
@@ -15,5 +16,6 @@ page(addRender(roots.main, roots.nav));
 page(addNav(navigationTemplate()));
 // page('/', homeView);
 page('/catalog', catalogView);
+page('/episodes', episodesView);
 page('/details/:id', detailsView);
 page.start();
