@@ -1,5 +1,5 @@
 // *** check the episodes schema here: https://finalspaceapi.com/docs/endpoints/episode ***
-import { get } from "./api.js";
+import { get } from './api.js';
 
 const endpoints = {
   episodes: '/episode',
