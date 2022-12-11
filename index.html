@@ -1,142 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/styles.css" />
-    <script src="./src/app.js" type="module"></script>
-  </head>
-  <body>
-    <nav id="main-nav">
-      <ul>
-        <li><a aria-label="Home" href="/">Home</a></li>
-        <li><a aria-label="Catalog" href="/catalog">Catalog</a></li>
-      </ul>
-    </nav>
 
-    <main>
-      <h1 class="text-center">CATALOG VIEW</h1>
-      <div class="cards container-wide">
-        <div class="card box-shadow-1">
-          <figure>
-            <img
-              class="card-image"
-              src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="Volcano"
-              title="Volcano"
-            />
-          </figure>
-          <section class="card-info">
-            <header>
-              <h2>Title</h2>
-            </header>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                aliquid sint voluptate ex eveniet hic aspernatur? Soluta quos
-                placeat veniam?
-              </p>
-              <a class="box-shadow-2" href="/details/some-card">Go to</a>
-            </div>
-          </section>
-        </div>
-        <div class="card box-shadow-1">
-          <figure>
-            <img
-              class="card-image"
-              src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="Volcano"
-              title="Volcano"
-            />
-          </figure>
-          <section class="card-info">
-            <header>
-              <h2>Title</h2>
-            </header>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                aliquid sint voluptate ex eveniet hic aspernatur? Soluta quos
-                placeat veniam?
-              </p>
-              <a class="box-shadow-2" href="/details/some-card">Go to</a>
-            </div>
-          </section>
-        </div>
-        <div class="card box-shadow-1">
-          <figure>
-            <img
-              class="card-image"
-              src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="Volcano"
-              title="Volcano"
-            />
-          </figure>
-          <section class="card-info">
-            <header>
-              <h2>Title</h2>
-            </header>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                aliquid sint voluptate ex eveniet hic aspernatur? Soluta quos
-                placeat veniam?
-              </p>
-              <a class="box-shadow-2" href="/details/some-card">Go to</a>
-            </div>
-          </section>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <script src="./src/app.js" type="module"></script>
+</head>
 
-      <h1 class="text-center">SINGLE DETAILS VIEW</h1>
-      <div class="single-details-view container-wide box-shadow-1">
-        <div class="single-details-view__image">
-          <!-- This anchor will lead to another view for the image -->
-          <a href="javascript:void(0)">
-            <img
-              src="https://images.unsplash.com/photo-1669025466409-450f22c7561a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="image"
-              title="image"
-              class="box-shadow-2"
-          /></a>
+<body>
+  <nav id="main-nav">
+    <!-- nav was here  -->
+  </nav>
+
+  <main>
+    <section id="home-section">
+      <header class="main-header">
+        <h1 class="text-center">HOME VIEW</h1>
+      </header>
+      <main class="main-info">
+        <div class="img">
+          <img src="./assets/imgs/home logo.png" alt="final-space-logo">
         </div>
-        <div class="single-details-view__info">
-          <div>
-            <div>
-              <h2>Airline Name</h2>
-              <img
-                src="./assets/imgs/914e5330ca464758a4db7479c59a4c7d.png"
-                alt="logo"
-                title="logo"
-              />
+        <div class="info">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit quaerat neque repudiandae excepturi ab
+            officiis alias, vel, cumque fuga animi error minus. Est porro aperiam nemo molestiae laborum modi?
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Final_Space">wikipedia</a>
+        </div>
+      </main>
+    </section>
+    <!-- catalog section was here -->
+    <section id="episodes-section">
+      <div class="episodes-card-container">
+        <div class="episode-card">
+          <div class="episode-card-header">
+            <div class="episode-card-img">
+              <img src="http://finalspaceapi.com/api/episode/image/chapter1.jpg" alt="episode-img">
+              <div class="episode-card-name">
+                <div class="heading">Chapter 1
+                </div>
+              </div>
             </div>
-            <p>Country Name</p>
+            <div class="episode-card-info">
+              <div class="heading">Release
+                <p id="date">02/15/2018</h2>
+              </div>
+              <div class="heading">Director
+                <p id="director">Mike Roberts</h2>
+              </div>
+              <div class="heading">Writer
+                <p id="writer">Olan Rogers</h2>
+              </div>
+            </div>
           </div>
-          <div>
-            <p>
-              Slogan here - Lorem ipsum dolor sit, amet consectetur adipisicing
-              elit. Incidunt nemo sit vitae, vero illum odio necessitatibus
-              sapiente ducimus eligendi, corrupti fugiat saepe voluptates vel
-              pariatur aut perspiciatis. Facilis, quia ut! Lorem ipsum dolor
-              sit, amet consectetur adipisicing elit.
-              <p class="single-details-view__info--show-more-info"> Incidunt nemo sit vitae,
-                vero illum odio necessitatibus sapiente ducimus eligendi, corrupti
-                fugiat saepe voluptates vel pariatur aut perspiciatis. Facilis,
-                quia ut!</p>
-                <span class="single-details-view__info--show-more-btn">Show more</span>
-            </p>
-          </div>
-          <hr />
-          <div>
-            <a href="https://www.google.com" target="_blank"
-              >Website - www.test.com</a
-            >
-            <p>Established - 1999 &copy;</p>
+          <div class="episode-card-body">
+            <div class="heading">Characters
+            </div>
           </div>
         </div>
       </div>
-    </main>
-  </body>
+    </section>
+    <!-- details sections was here -->
+  </main>
+</body>
+
 </html>

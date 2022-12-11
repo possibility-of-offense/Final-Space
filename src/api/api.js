@@ -1,12 +1,14 @@
-const HOST = 'https://finalspaceapi.com/api/v0/';
+const HOST = 'https://finalspaceapi.com/api/v0';
 
 const normalizeData = data => {
-  return data.reduce((acc, cur) => {
-    const id = cur.id;
+  return Array.isArray(data)
+    ? data.reduce((acc, cur) => {
+        const id = cur.id;
 
-    acc[id] = cur;
-    return acc;
-  }, {});
+        acc[id] = cur;
+        return acc;
+      }, {})
+    : data;
 };
 
 export const get = async endpoint => {

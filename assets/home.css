@@ -1,0 +1,15 @@
+.main-info {
+  display: flex;
+  justify-content: center;
+  margin: auto 10%;
+  gap: 10px;
+}
+
+.info {
+  width: 30%;
+  align-self: center;
+}
+
+.info p {
+  margin-bottom: 1.5rem;
+}
