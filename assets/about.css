@@ -1,0 +1,110 @@
+.about-view h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+.contributors {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+@media (orientation: landscape) {
+  .contributors {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contributors > div {
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.contributors > div:hover::after {
+  opacity: 1;
+  transform: none;
+}
+
+.contributors > div:hover .about-info {
+  opacity: 1;
+  transform: none;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.contributors > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 116, 228, 1);
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  transform: translateY(100%);
+  pointer-events: none;
+}
+
+.contributors > div .about-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 2;
+  font-size: 15px;
+  padding-top: 15px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0;
+  color: #fff;
+}
+
+.contributors .about-info .inner-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contributors > div figure {
+  padding-top: 80%;
+  position: relative;
+  margin: 0;
+}
+
+.contributors > div figure img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contributors > div > div {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.contributors > div > div h5 {
+  margin: 15px 0;
+}
+
+.contributors > div > div a {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  padding: 5px 15px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+}
