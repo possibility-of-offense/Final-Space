@@ -1,7 +1,7 @@
-import { html } from '../../node_modules/lit-html/lit-html.js';
-import { getSingleChar } from '../api/charactersService.js';
+import { html } from "../../node_modules/lit-html/lit-html.js";
+import { getSingleChar } from "../api/charactersService.js";
 
-const detailsTemplate = card => html`
+const detailsTemplate = (card) => html`
 <section id="details-section">
       <h1 class="text-center">SINGLE DETAILS VIEW</h1>
       <div class="single-details-view container-wide box-shadow-1">
@@ -43,7 +43,7 @@ const detailsTemplate = card => html`
     </section>
 `;
 
-export const detailsView = async ctx => {
-  const char = await getSingleChar(ctx.params.id)
-  ctx.renderContent(detailsTemplate(char))
+export const detailsView = async (ctx) => {
+  const char = await getSingleChar(ctx.params.id);
+  ctx.renderContent(detailsTemplate(char));
 };
