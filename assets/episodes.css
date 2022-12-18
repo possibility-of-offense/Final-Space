@@ -28,12 +28,14 @@
 }
 
 .episode-card {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
 
 .episode-card-header {
-  border-radius: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   display: flex;
   position: relative;
   width: 400px;
@@ -78,4 +80,11 @@
   position: absolute;
   right: 70px;
   bottom: 135px;
+}
+
+.episode-card-body {
+  height: 400px;
+  background-color: red;
+  border-bottom-left-radius:20px ;
+  border-bottom-right-radius:20px ;
 }

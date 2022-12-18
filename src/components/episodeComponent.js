@@ -22,5 +22,16 @@ export const episodeComponent = episode => html`
               </div>
             </div>
           </div>
+          <div class="episode-card-body">
+            <div class="episode-card-character">
+              <img src="#" alt="img goes here">
+              <p id="character-name">Name goes here</p>
+              <div class="details">See details</div>
+            </div>
+            <div class="episode-card-loop-buttons">
+              <a href="#" class="previous-btn">Prev</a>
+              <a href="#" class="next-btn">Next</a>
+            </div>
+          </div>
         </div>
 `;
