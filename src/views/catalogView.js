@@ -14,5 +14,6 @@ const catalogTemplate = chars => html`
 
 export const catalogView = async (ctx) => {
   const chars = await getLimitChars(9)
+  console.log(chars)
   ctx.renderContent(catalogTemplate(chars))
 }
