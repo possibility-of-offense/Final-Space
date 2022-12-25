@@ -21,5 +21,19 @@ export const episodeComponent = (episode) => html`
               <img src=${episode.img_url} alt="episode-img">
             </div>
           </div>
+          <div class="episode-card-body">
+            <div class="heading card-header">
+              Characters
+            </div>
+            <div class="episode-card-character">
+              <img src="https://finalspaceapi.com/api/character/avatar/gary_goodspeed.png" alt="img goes here">
+              <p id="character-name">Name goes here</p>
+              <div class="details">See details</div>
+            </div>
+            <div class="episode-card-loop-buttons">
+              <a href="#" class="previous-btn">Prev</a>
+              <a href="#" class="next-btn">Next</a>
+            </div>
+          </div>
         </div>
 `;

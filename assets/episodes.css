@@ -29,14 +29,24 @@
 }
 
 .episode-card {
+  margin-top: 10px;
+  width: 400px;
   display: flex;
   flex-direction: column;
+  border-radius: 100px;
+  box-shadow: 1px 1px 20px black;
 }
 
 .episode-card-header {
-  border-radius: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   display: flex;
   position: relative;
+
+  height: 200px;
+  border-bottom: 2px solid white;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(27,116,228,1) 72%);
+
   /* width: 400px; */
   height: 200px;
   background: linear-gradient(
@@ -44,6 +54,7 @@
     rgba(2, 0, 36, 1) 0%,
     rgba(27, 116, 228, 1) 72%
   );
+
 }
 
 .episode-card-info {
@@ -68,8 +79,11 @@
   position: relative;
   bottom: -25px;
   right: 5px;
+  box-shadow: 0px 10px 15px #05103A;
+
   border-radius: 100px;
-  box-shadow: 0px 10px 10px rgba(70, 67, 67, 0.5);
+  /* box-shadow: 0px 10px 10px rgba(70, 67, 67, 0.5); */
+
 }
 
 .heading {
@@ -94,5 +108,33 @@
   margin-bottom: 10px;
   /* position: absolute;
   right: 70px;
-  bottom: 135px; */
+  bottom: 135px;
+}
+
+.episode-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: start;
+  /* height: 400px; */
+  background-color: red;
+  border-bottom-left-radius:20px ;
+  border-bottom-right-radius:20px ;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(27,116,228,1) 72%);
+
+}
+
+.episode-card-body a {
+  display: inline-block;
+}
+
+.episode-card-body img {
+  border-radius: 10px;
+}
+
+.card-header {
+  width: 100%;
+  text-align: start;
+  padding: 15px 20px;
 }

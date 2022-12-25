@@ -69,9 +69,8 @@ const catalogTemplate = (chars, querystring, nextElements) => {
 };
 
 export const catalogView = async (ctx) => {
-  const { currentChars, nextElements } = await paginateControllers(store, ctx);
+  const chars = await getLimitChars(9)
+  console.log(chars)
+  ctx.renderContent(catalogTemplate(chars))
+}
 
-  ctx.renderContent(
-    catalogTemplate(currentChars, ctx.querystring, nextElements)
-  );
-};
