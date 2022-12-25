@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 /* .cards {
   display: flex;
@@ -12,6 +12,7 @@
 .cards {
   display: grid;
   grid-gap: 1rem;
+  grid-row-gap: 2rem;
   margin-top: 2rem !important;
 }
 
@@ -41,9 +42,19 @@
   border-top-right-radius: 20px;
   display: flex;
   position: relative;
+
   height: 200px;
   border-bottom: 2px solid white;
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(27,116,228,1) 72%);
+
+  /* width: 400px; */
+  height: 200px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(27, 116, 228, 1) 72%
+  );
+
 }
 
 .episode-card-info {
@@ -54,14 +65,25 @@
   margin-left: 20px;
 }
 
+.episode-card-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin-left: 15px;
+}
+
 .episode-card-img > img {
-  width: 250px;
+  /* width: 250px; */
   border: 0;
-  border-radius: 100px;
-  position: absolute;
+  position: relative;
   bottom: -25px;
   right: 5px;
   box-shadow: 0px 10px 15px #05103A;
+
+  border-radius: 100px;
+  /* box-shadow: 0px 10px 10px rgba(70, 67, 67, 0.5); */
+
 }
 
 .heading {
@@ -73,14 +95,18 @@
   color: white;
 }
 
-#date, #name, #director, #writer {
+#date,
+#name,
+#director,
+#writer {
   text-transform: none;
   font-size: 14px;
   font-weight: 400;
 }
 
 .episode-card-name {
-  position: absolute;
+  margin-bottom: 10px;
+  /* position: absolute;
   right: 70px;
   bottom: 135px;
 }

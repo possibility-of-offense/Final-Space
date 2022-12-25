@@ -72,3 +72,32 @@
 .cards .card .card-body a:focus {
   box-shadow: 2px 2px 8px rgb(0 0 0 / 55%);
 }
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.pagination-container a {
+  display: inline-block;
+  background-color: var(--main-bg);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.pagination-container a.prev-link {
+  margin-right: auto;
+}
+
+.pagination-container a.next-link {
+  margin-left: auto;
+}
+
+@media (orientation: landscape) {
+  .pagination-container {
+    grid-column: 1 / -1;
+  }
+}
